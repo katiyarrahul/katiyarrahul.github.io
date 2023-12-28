@@ -67,7 +67,7 @@ body,
 
 #highscore {
   color: #d8ddca;
-  display: none;
+  display: block;
 }
 
 .game-border-3,
@@ -86,4 +86,45 @@ body,
 
 #logo {
   position: absolute;
+}
+
+.madeby {
+  font-size: 35px;
+  color: #8b966c;
+  font-weight: bolder;
+  margin-top: -105px;
+}
+.madeby p {
+  text-align: center;
+}
+
+.madeby a {
+  color: #abb788;
+  text-decoration: none;
+}
+
+.mobile-error {
+  display: none;
+}
+
+@media (max-width: 1366px) {
+  .mobile-error {
+    display: block;
+    font-size: 35px;
+    color: #8b966c;
+    font-weight: bolder;
+    width: 350px;
+    margin: auto;
+  }
+
+  .mobile-error a {
+    color: #abb788;
+    text-decoration: none;
+  }
+
+  #game-elements,
+  #instruction-text,
+  #logo {
+    display: none;
+  }
 }
