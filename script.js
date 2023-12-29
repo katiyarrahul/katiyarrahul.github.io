@@ -55,6 +55,11 @@ function drawFood() {
 function generateFood() {
   const x = Math.floor(Math.random() * gridSize) + 1;
   const y = Math.floor(Math.random() * gridSize) + 1;
+  for (i = 0; i < snake.length; i++) {
+    if (x === snake[i].x && y === snake[i].y) {
+      generateFood();
+    }
+  }
   return { x, y };
 }
 
