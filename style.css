@@ -5,6 +5,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "VT323", monospace;
+  zoom: 0.5;
 }
 
 body,
